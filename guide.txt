@@ -1,0 +1,16 @@
+git init
+git status
+*Cria um arquivo*
+git add .
+git config user.email '<email>'
+git config user.name '<nome>'
+git commit -m 'Project setup'
+git checkout -b V1.0
+*Cria outro arquivo*
+git add .
+git commit -a -m 'V2.0'
+git checkout master
+git merge V1.0
+git remote -v
+git remote add origin https://github.com/eduardo-ehsc/DataStructure-Cotil.git
+git push -u origin master
